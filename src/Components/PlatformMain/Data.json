@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "question": "What is Airtable used for?",
+    "answer": "Airtable is used for Marketing, Product Operations, and more. But its flexibility means it can be used for nearly anything, from tracking cattle to planning an event to tracking sales leads."
+  },
+  {
+    "id": 2,
+    "question": "What features does Airtable have?",
+    "answer": "Views: Transform your data into actionable views, like List, Timeline, Gantt, and more.Interface Designer: Design custom apps in minutes from your existing data using drag-and-drop elements.Automations: Streamline how your team gets work done and cut out clutter by automating your processes.Sync: Build with confidence when data is verified and up-to-date.Administration and controls: Support large-scale data, workflows, and teams—all in one place. ...and much more!"
+  },
+  {
+    "id": 3,
+    "question": "What type of work is AI best for?",
+    "answer": "Airtable AI can be added to any workflow and is flexible enough to advance critical steps across workflows in every team or department. Product teams can use AI to categorize customer feedback and generate product specs to speed up feature development. Marketing teams can use AI to generate creative briefs, gather competitive intel, or draft blog posts. HR and finance teams can use AI to generate job descriptions, categorize budget spend, draft company memos, and more. "
+  },
+  {
+    "id": 4,
+    "question": "Why use Airtable vs. spreadsheets?",
+    "answer": "Spreadsheets evolved from paper-based account ledgers, while Airtable was built from the start as a relational database. So while spreadsheets are fine for tracking information, Airtable makes your data actionable. In Airtable you can sync, structure and store data however you need to, to support infinite use cases.In addition, data is synced in real time. So if a data point changes, that change is automatically synced across every workflow and every place that data appears, eliminating the need to manually update information. You can learn more about databases vs. spreadsheets here."
+  },
+  {
+    "id": 5,
+    "question": "Does Airtable use SQL?",
+    "answer": "Although Airtable is built as a relational database, you cannot directly query an Airtable table.However, you can customize a view in Airtable to allow for SQL queries. In addition, there are ways to query your Airtable base with SQL from right inside Airtable."
+  },
+  {
+    "id": 6,
+    "question": "Is Airtable a CRM?",
+    "answer": "Yes, Airtable can be used as a Customer Relationship Management (CRM) tool. There’s even a pre-built CRM template you can use to get started quickly."
+  },
+  {
+    "id": 7,
+    "question": "How much does Airtable cost?",
+    "answer": "Airtable has free, paid, and Enterprise plans available. You can learn more on our pricing page."
+  }
+]

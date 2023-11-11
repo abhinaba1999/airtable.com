@@ -1,0 +1,116 @@
+.Governance-and-Scale-parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 3rem auto;
+  background: #ebf7f7;
+}
+.Governance-and-Scale-video {
+  width: 60%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.Governance-and-Scale-text {
+  padding: 1rem;
+}
+.Governance-and-Scale-text h2 {
+  margin: 1rem auto;
+  font-size: 50px;
+}
+.Governance-and-Scale-text p {
+  margin: 1rem auto;
+  font-size: 20px;
+}
+.Governance-and-Scale-button {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem auto;
+}
+.Governance-and-Scale-button button:hover {
+  color: blue;
+}
+.Governance-and-Scale-results-parent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  margin: 3rem ;
+  background-color: #ffffff;
+}
+.Governance-and-Scale-results-text-heading {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.Governance-and-Scale-results-text-results-parent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.Governance-and-Scale-results-text-results-child-1
+  h2,
+  .Governance-and-Scale-results-text-results-child-2
+  h2,
+  .Governance-and-Scale-results-text-results-child-3
+  h2 {
+  font-size: 50px;
+}
+.Governance-and-Scale-results-text-results-child-1 p,
+.Governance-and-Scale-results-text-results-child-2 p,
+.Governance-and-Scale-results-text-results-child-3 p {
+  font-size: 25px;
+}
+.Governance-and-Scale-results-text-results-child-1 ,
+.Governance-and-Scale-results-text-results-child-2 ,
+.Governance-and-Scale-results-text-results-child-3  {
+  margin: auto 2rem;
+}
+.Governance-and-Scale-results-text-results-child-1 h2{
+ color: #BA8420;
+}
+.Governance-and-Scale-results-text-results-child-2 h2{
+ color: #0076A8;
+}
+.Governance-and-Scale-results-text-results-child-3 h2{
+ color: #C2214C;
+}
+.Governance-and-Scale-chart-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+   margin: 10rem auto;
+   padding: 2rem;
+}
+.Governance-and-Scale-chart-image{
+    width: 55%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.Governance-and-Scale-chart-text{
+    width: 43%;
+    padding: 2rem;
+
+}
+.Governance-and-Scale-chart-text h2{
+    font-size: 50px;
+    margin: 1rem auto;
+}
+.Governance-and-Scale-chart-text-list li{
+    padding: 1rem;
+    font-size: 20px;
+    list-style-type:symbols("✓");
+}
+.Governance-and-Scale-chart-parent-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+   margin: 10rem auto 1rem auto;
+   padding: 2rem;
+   background-color: #EBF7F7;
+}

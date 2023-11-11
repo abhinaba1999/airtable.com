@@ -1,0 +1,53 @@
+.parent{
+    background-color: black;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.way-to-deploy-ai h2,.way-to-deploy-ai p{
+
+    color: white;
+}
+.way-to-deploy-ai h2{
+    font-size: 60px;
+}
+.way-to-deploy-ai p{
+    font-size: 20px;
+}
+.way-to-deploy-ai{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.video-player-top{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.parent-generative-ai{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto;
+    gap: 2%;
+    padding: 3rem;
+}
+.parent-generative-ai-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.parent-generative-ai-video-player{
+    width: 56%;
+    border-radius: 20px;
+    overflow: hidden;
+}

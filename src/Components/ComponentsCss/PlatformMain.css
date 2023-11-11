@@ -1,0 +1,111 @@
+.question {
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper {
+  padding: 3rem;
+  width: 50%;
+  margin: auto;
+}
+.main {
+  width: 98%;
+  margin: auto;
+  height: auto;
+}
+.answer {
+  padding: 1rem;
+  margin: 1rem;
+}
+.heading h2 {
+  font-size: 60px;
+}
+.heading p {
+  font-size: 30px;
+}
+.transformBusiness {
+  display: flex;
+  margin: 1rem auto;
+  padding: 3rem;
+  
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #F0F6FF;
+}
+
+.heading {
+  width: 50%;
+  margin: auto;
+}
+
+.Transform-Video {
+    width: 50%;
+
+}
+.Transform-Video video{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.transform-buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.transform-buttons:nth-child(1){
+    background: #254FAD;
+}
+.Used-by-teams{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem;
+    align-items: center;
+}
+.Used-by-teams p{
+    font-size: x-large;
+}
+.teams-image{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.A-next-gen-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 3rem;
+    background-color: #F0F6FF;
+}
+
+.use-custom-business-apps--drive-results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    padding: 3rem;
+    margin: 1rem auto;
+}
+.use-custom-business-apps--drive-results-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.use-custom-business-apps--drive-results-text button{
+    color: #476ABA;
+    width: auto;
+}

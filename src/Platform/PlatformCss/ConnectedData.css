@@ -1,0 +1,89 @@
+.connected-data-powerful-data-model-parent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3%;
+    padding:0 3rem;
+    background-color: #EBF7FC;
+}
+.connected-data-powerful-data-model-text{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.connected-data-powerful-data-model-text h2{
+    font-size: 50px;
+}
+.connected-data-powerful-data-model-text p{
+    font-size: 25px;
+}
+.connected-data-powerful-data-model-video{
+    width: 75%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.connected-data-powerful-data-model-video video{
+    display: block;
+    margin: auto;
+}
+.connected-data-powerful-data-model-button{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    align-items: left;
+    justify-content: left;
+}
+.connected-data-product-marketing-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 4rem auto;
+}
+.connected-data-product-marketing-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 0;
+    margin: 0 4rem;
+}
+.connected-data-product-marketing-text h2{
+  font-size: 40px;
+}
+.connected-data-product-marketing-text p{
+    font-size: 16px;
+}
+.Verify-key-company-data-sets-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    padding: 4rem;
+    margin: 1rem auto;
+}
+.Verify-key-company-data-sets-image{
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.Verify-key-company-data-sets-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.Verify-key-company-data-sets-text h2{
+    margin: 1rem 0;
+    font-size: 50px;
+}
+.Verify-key-company-data-sets-text p{
+    font-size: 20px;
+}

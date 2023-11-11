@@ -1,0 +1,76 @@
+button{
+  border: none;
+}
+.logoimage{
+  justify-content: space-around;
+}
+.headar-first-text{
+  font-size: 17px;
+  padding: 12px 32px;
+}
+h3{
+  font-size: 15px;
+}
+Button:hover{
+ color: #254FAD;
+}
+.parentNavebar{
+  background-color: white;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 20px;
+}
+.App{
+  background-color: #F0F6FF;
+  scroll-behavior: hidden;
+  width: 100%;
+}
+
+.navebar-left{
+  width: 60%;
+  display : grid;
+  grid-template-columns:repeat(6,auto);
+  align-items: center;
+}
+.logoimage{
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  align-items: center;
+}
+
+.navebar-right{
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navebar-right > *{
+    background: none;
+    background-color: red;
+   }
+
+@media  screen and (max-width: 720px){
+   .App{
+     width: 100%;
+   }
+   #headar{
+     width: 100%;
+   }
+   .navebar-left{
+    width: auto;
+   }
+   .navebar-right{
+    width: 40%;
+    font-size: 10px;
+
+   }
+   .navebar-right  button{
+    width: 80px;
+   font-size: 10px;
+   }
+   .navebar-left  button{
+    width: 80px;
+    font-size: 10px;
+   }
+}
+
