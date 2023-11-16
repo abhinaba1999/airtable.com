@@ -1,0 +1,186 @@
+.product-parent{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3%;
+    margin: 2rem auto;
+    padding:0 3rem;
+   
+}
+
+.product-text{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.product-text h2{
+    font-size: 50px;
+    margin: 1rem auto;
+}
+.product-text p{
+    font-size: 20px;
+    margin: 1rem auto;
+}
+
+.product-video{
+    width: 55%;
+    height: 95%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.product-video video{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 1rem auto;
+}
+
+.product-button{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.trusted-by-companies-parent{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 3rem;
+}
+
+.why-airtable-works-for-product-team-parent{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 3rem;
+}
+
+.why-airtable-works-for-product-team-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.why-airtable-works-for-product-team-text h2{
+    font-size: 50px;
+    margin: 1rem auto;
+}
+
+.why-airtable-works-for-product-team-text p{
+    font-size: 20px;
+    margin: 1rem auto;
+}
+
+.why-airtable-works-for-product-team-image{
+    width: 60%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.feedback-parent{
+    width: 100%;
+    padding: 3rem;
+    margin: 2rem auto;
+    background-color: #F8FAFC;
+}
+
+.feedback-text-heading-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.feedback-text-heading-top h2{
+    font-size: 40px;
+}
+
+.feedback-text-heading-top p{
+    font-size: 18px;
+}
+
+.part1-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 1rem;
+
+}
+
+.part1-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.part1-image{
+    width: 60%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.part1-h3{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.part1-p{
+ padding: 2rem;
+ font-size: x-large;
+}
+
+.power-ai-parent{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.power-ai-image{
+    width: 70%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.power-ai-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+}
+.power-ai-text h4{
+    font-size: 30px;
+    margin: 1rem 0;
+}
+
+.power-ai-text h2{
+    font-size: 40px;
+    margin: 1rem 0;
+
+}
+
+.power-ai-text p{
+    font-size: 20px;
+    margin: 1rem 0;
+
+}

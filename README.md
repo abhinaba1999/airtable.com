@@ -37,3 +37,12 @@
   --Used Chakra UI for the buttons, heading, p, and images.
   -Platform Drawer has individual sections App Building, Connected data, AI, Governance and Scale.
   --Every section has its dedicated pages & contents.
+## Basic animation in the footer section. 
+- The animation section is working properly.
+  --Users can use the animation section individually.
+  --Used Chakra UI for the buttons, heading, p, and images.
+
+### After Login
+
+-Everything without a login content section was not visible on the webpage.
+-It was removed from the UI.

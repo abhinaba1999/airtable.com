@@ -10,7 +10,6 @@ import ConnectedData from "../Platform/ConnectedData";
 import GovernanceandScale from "../Platform/GovernanceandScale";
 import Finance from "../Solutions/Finance";
 import Sales from "../Solutions/Sales";
-
 import HumanResources from "../Solutions/HumanResources";
 import PlatformMain from "../Components/PlatformMain";
 import Operations from "../Solutions/Operations";
@@ -25,6 +24,7 @@ function AllRouteElement() {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="login" element={<Signin />} />
         <Route
           path="/AutomateyourworkwithAirtable"
           element={<AutomateyourworkwithAirtable />}
@@ -39,7 +39,7 @@ function AllRouteElement() {
           element={<GovernanceandScale />}
         />
         <Route path="/Contact-Sales" element={<ContactSales />} />
-         <Route path="/sign-in" element={<Signin />}/>
+        <Route path="/sign-in" element={<Signin />} />
         <Route path="/sign-up-for-free" element={<SignupForFree />} />
         <Route path="/Solutions/Product" element={<Product />} />
         <Route path="/Solutions/Marketing" element={<Marketing />} />

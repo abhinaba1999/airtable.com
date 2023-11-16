@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #0d7f78;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.navbar img {
+  width: 4rem;
+}
+
+.nav {
+  width: 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#TodoList {
+    width: 15%;
+    margin-right: 50%;
+  border: 1px solid red;
+  background: transparent;
+  color: aliceblue;
+}
+
+#TodoList:hover{
+    background: rgb(66, 66, 146);
+}

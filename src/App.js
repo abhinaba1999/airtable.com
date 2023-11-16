@@ -1,13 +1,15 @@
 import "./App.css";
 import AllRouteElement from "./Elements/AllRouteElement";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Platform from "./Components/Platform";
 import Solusation from "./Components/Solusation";
-import Resources from "./Components/Resources";
 import { Button } from "@chakra-ui/react";
+import ScrollBar from "./ScrollBar";
+import React, { useEffect } from "react";
 
 function App() {
   const navigate = useNavigate();
+
   return (
     <div className="App">
       <header
@@ -47,26 +49,40 @@ function App() {
             </div>
             <Platform />
             <Solusation />
-            <Resources />
-            <Button
-              style={{ background: "none", border: "no-border" }}
-              onClick={() => navigate("/pricing")}
-            >
-              Pricing
-            </Button>
           </div>
           <div className="navebar-right">
-            <Button style={{ background: "noen" }} color="black" onClick={() => navigate("/Contact-Sales")}>Contact Sales</Button>
-            <Button style={{backgroundColor:"#254FAD"}} color="#FFFFFF" onClick={() => navigate("/sign-up-for-free")}>
+            <Button
+              style={{ background: "noen" }}
+              color="black"
+              onClick={() => navigate("/Contact-Sales")}
+            >
+              Contact Sales
+            </Button>
+            <Button
+              style={{ backgroundColor: "#254FAD" }}
+              color="#FFFFFF"
+              onClick={() => navigate("/sign-up-for-free")}
+            >
               Sign up for free
             </Button>
-            <Button style={{ background: "noen" }} onClick={() => navigate("/login")}>Sign in</Button>
+            <Button
+              style={{ background: "noen" }}
+              onClick={() => navigate("/login")}
+            >
+              Sign in
+            </Button>
           </div>
         </div>
       </header>
       <body style={{ width: "98%", margin: "auto" }}>
         <AllRouteElement />
       </body>
+
+      <footer>
+        <div style={{ width: "98%", margin: "20% auto 1rem", height: "100%" }}>
+          <ScrollBar />
+        </div>
+      </footer>
     </div>
   );
 }

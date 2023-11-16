@@ -1,0 +1,79 @@
+.contact-sales-form {
+  
+  width: 40%;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 20px;
+}
+
+.contact-sales-legend{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
+  width: 40%;
+  color: blue;
+}
+#email {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+#firstName{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+   margin-bottom: 1rem;
+}
+
+#lastName{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+   margin-bottom: 1rem;
+
+}
+
+#companyName{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+   margin-bottom: 1rem;
+
+}
+
+#phoneNumber{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+   margin-bottom: 1rem;
+
+}
+
+#TeamFunction{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+   margin-bottom: 1rem;
+
+}
+
+#JobLevel{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+   margin-bottom: 1rem;
+}
+
+#Howcanourteamhelp{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+   margin-bottom: 1rem;
+}
