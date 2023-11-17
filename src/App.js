@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header
         id="headar"
-        style={{ width: "98%", margin: "auto", padding: "1rem" ,position:"sticky",top:"0",zIndex:"1"}}
+        style={{ width: "98%", margin: "auto", padding: "1rem" ,position:"sticky",top:"0",zIndex:"1",background:"white"}}
       >
         <div className="headar-first-text" style={{ textAlign: "center" }}>
           <p>
