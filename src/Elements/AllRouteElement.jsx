@@ -18,8 +18,11 @@ import Product from "../Solutions/Product";
 import SignupForFree from "../Components/SignUpForFree";
 import ContactSales from "../Components/ContactSales";
 import Signin from "../Components/Signin";
-
+import AdminePage from "../Components/AdminePage";
+import LoginAdmine from "../Components/LoginAdmine";
+import { AuthContext } from "../AuthContextProvider/AuthContextProvider";
 function AllRouteElement() {
+  const {admineLogin, setAdmineLogin}=React.useContext(AuthContext)
   return (
     <div>
       <Routes>
@@ -38,6 +41,9 @@ function AllRouteElement() {
           path="/platform/Governance-and-Scale"
           element={<GovernanceandScale />}
         />
+        <Route path="/adminlogin" element={<LoginAdmine />} />
+
+        {admineLogin && <Route path="/admin" element={<AdminePage />} />}
         <Route path="/Contact-Sales" element={<ContactSales />} />
         <Route path="/sign-in" element={<Signin />} />
         <Route path="/sign-up-for-free" element={<SignupForFree />} />

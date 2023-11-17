@@ -75,18 +75,13 @@ function Home() {
               m={"3"}
               background={"#1C3B82"}
               color={"white"}
-              w={"30%"}
               onClick={() => {
                 navigate("/sign-up-for-free");
               }}
             >
               Sign up for free
             </Button>
-            <Button
-              m={"2"}
-              w={"30%"}
-              onClick={() => navigate("/contact-sales")}
-            >
+            <Button m={"2"} onClick={() => navigate("/contact-sales")}>
               Contact Sales
             </Button>
           </div>
@@ -126,50 +121,40 @@ function Home() {
         />
       </div>
       <div className="operationalize">
-        <Heading
-          as="h2"
-          className="operationalizeHeading"
-          fontSize={"xx-large"}
-        >
+        <Heading as="h2" className="operationalizeHeading">
           Operationalize your critical data, move beyond rigid tools, and
           reimagine workflows with AI. No code required.
         </Heading>
-        <Image src={OperationalizeImage} alt="Operationalize Image" />
+        <Image
+          width={"100%"}
+          src={OperationalizeImage}
+          alt="Operationalize Image"
+        />
       </div>
       <div className="player-parent">
         <div className="player-container">
           <ReactPlayer
-            className="react-player"
+            className="react-pl ayer"
             playing={true}
             loop
             playIcon={"none"}
             url={
               "https://videos.ctfassets.net/wl95ljfippl8/7zF9WY7AzMowHl5XcvOxFj/537c723d733d71843b824337ef3e515e/PlatformOverview-2000x1500.mp4"
             }
+            width={"auto"}
             controls={false}
             muted={true}
           />
         </div>
         <div className="player-text">
-          <Heading as="h2" fontSize={"xxx-large"}>
-            Simple to build. Intuitive to use.
-          </Heading>
-          <Text as="p" fontSize={"large"}>
+          <Heading as="h2">Simple to build. Intuitive to use.</Heading>
+          <Text as="p">
             Enable those closest to the real-world details of your business to
             customize the apps that accelerate how work gets done.
           </Text>
         </div>
       </div>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr ",
-          gridTemplateRows: "1fr 1fr ",
-          gap: "3rem",
-          padding: "3rem",
-          margin: "0 auto",
-        }}
-      >
+      <div className="parent-progress-data">
         <Heading as="h2" fontSize={"40px"}>
           No matter your workflow,you can build it in Airtable
         </Heading>
@@ -188,8 +173,10 @@ function Home() {
             onClick={() => navigate("/Solutions/Marketing")}
           >
             <HomeComponent value={value} setValue={setValue} />
-            <Heading as="h2">Marketing</Heading>
-            <Text as="p">
+            <Heading as="h2" fontSize={"auto"}>
+              Marketing
+            </Heading>
+            <Text fontSize={"auto"} as="p">
               Create custom workflows to run campaigns and track successes.
             </Text>
           </div>
@@ -198,8 +185,10 @@ function Home() {
             onClick={() => navigate("/Solutions/Product")}
           >
             <HomeComponent value={value} setValue={setValue} />
-            <Heading as="h2">Product</Heading>
-            <Text as="p">
+            <Heading as="h2" fontSize={"auto"}>
+              Product
+            </Heading>
+            <Text as="p" fontSize={"auto"}>
               Build roadmaps and alignment while creating products customers
               love.
             </Text>
@@ -209,8 +198,10 @@ function Home() {
             onClick={() => navigate("/Solutions/Operations")}
           >
             <HomeComponent value={value} setValue={setValue} />
-            <Heading as="h2">Operations</Heading>
-            <Text as="p">
+            <Heading as="h2" fontSize={"auto"}>
+              Operations
+            </Heading>
+            <Text as="p" fontSize={"auto"}>
               Bring your data and processes into a single, well-organized place.
             </Text>
           </div>
@@ -219,8 +210,10 @@ function Home() {
             onClick={() => navigate("/Solutions/Finance")}
           >
             <HomeComponent value={value} setValue={setValue} />
-            <Heading as="h2">Finance</Heading>
-            <Text as="p">
+            <Heading as="h2" fontSize={"auto"}>
+              Finance
+            </Heading>
+            <Text as="p" fontSize={"auto"}>
               Streamline requests, manage budgets, and automate reporting.
             </Text>
           </div>
@@ -229,8 +222,10 @@ function Home() {
             onClick={() => navigate("/Solutions/HumanResources")}
           >
             <HomeComponent value={value} setValue={setValue} />
-            <Heading>Human Resources</Heading>
-            <Text>Manage and streamline processes from hire to retire.</Text>
+            <Heading fontSize={"auto"}>Human Resources</Heading>
+            <Text fontSize={"auto"}>
+              Manage and streamline processes from hire to retire.
+            </Text>
           </div>
         </div>
       </div>
@@ -244,9 +239,11 @@ function Home() {
             loop
             muted={true}
             controls={false}
+            width={'auto'}
+            height={'auto'}
           />
         </div>
-        <div onClick={() => navigate("/platform/Ai")}>
+        <div id="aivideo-text" onClick={() => navigate("/platform/Ai")}>
           <Text fontSize={"x-large"} as="bold">
             In beta
           </Text>
@@ -260,7 +257,7 @@ function Home() {
       </div>
 
       <div className="parent-video-of-equinox" style={{ width: "100%" }}>
-        <video src={url1} alt="video-of-equinox" autoPlay loop muted />
+        <video width={"100%"} height={"100%"} src={url1} alt="video-of-equinox" autoPlay loop muted />
 
         <div className="equinox-text">
           <Heading as="h2" color={"white"}>
@@ -284,7 +281,7 @@ function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button background={"none"} color={"white"}>
+            <Button w={'auto'} background={"none"} color={"white"}>
               Read Equinox case study ->
             </Button>
           </a>

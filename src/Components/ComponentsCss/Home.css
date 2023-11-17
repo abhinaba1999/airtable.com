@@ -1,6 +1,6 @@
 #homeTopImage {
   width: 100%;
-  height: 500px;
+  height: 31.3rem;
   background-color: #bbd5ea;
   display: flex;
   justify-content: space-between;
@@ -30,7 +30,7 @@
   object-fit: cover;
   padding: 0;
   margin: 0;
-  border-radius: 20px;
+  border-radius: 1.2rem;
 }
 .player-container {
   position: relative;
@@ -53,7 +53,7 @@
   align-items: center;
   padding: 2rem;
 
-  border-radius: 20px;
+  border-radius: 1.2rem;
   margin: auto;
   scroll-behavior: hidden;
 }
@@ -66,10 +66,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  margin: 20px;
+  margin: 1.2rem;
   scroll-behavior: hidden;
   background-color: #e9e0ff;
-  border-radius: 20px;
+  border-radius: 1.2rem;
 }
 
 .equinox-text {
@@ -88,14 +88,47 @@
   object-fit: cover;
   padding: 0;
   margin: 0;
-  border-radius: 20px;
+  border-radius: 1.2rem;
 }
+
+.player-text h2 {
+  font-size: 3rem;
+}
+.operationalize h2 {
+  font-size: 3rem;
+}
+
+.parent-progress-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3rem;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.parent-progress-data h2{
+  font-size: 40px;
+}
+
+.parent-progress-data p{
+  font-size: 20px;
+}
+
+#aivideo-text{
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: 1rem;
+
+}
+
 
 @media screen and (max-width: 720px) {
   #homeTopImage h2,
   #homeTopImage p,
   #homeTopImage button {
-    font-size: 10px;
+    font-size: 0.7rem;
   }
   #aivideo video {
     width: auto;
@@ -103,6 +136,36 @@
     object-fit: cover;
   }
   #parent-video-of-ai {
-   grid-row: initial;
+    grid-row: initial;
   }
+  .player-text h2 {
+    font-size: 1rem;
+  }
+  .operationalize h2 {
+    font-size: 1rem;
+  }
+
+  .parent-progress-data h2{
+  font-size: 1rem;
+}
+
+.parent-progress-data p{
+  font-size: 1rem;
+}
+
+#parent-progress-data{
+  flex: none;
+}
+
+
+#parent-video-of-ai {
+ flex: none;
+}
+.equinox-text {
+  margin: auto;
+  margin-top: 0;
+
+  padding: 2rem;
+  margin-left: 0;
+}
 }

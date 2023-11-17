@@ -29,7 +29,7 @@ function HomePage() {
         data.status = true;
       }
     });
-    const status=false;
+    const status = false;
     try {
       const data = {
         name,
@@ -41,7 +41,7 @@ function HomePage() {
       setMainDatas([...MainDatas, data]);
 
       let res = await axios.patch(`http://localhost:3004/profile/${Id}`, {
-        TodoData: [...MainDatas,data],
+        TodoData: [...MainDatas, data],
       });
       let dataof = await res.json();
       setTodo(true);
@@ -51,63 +51,68 @@ function HomePage() {
   }
 
   const handleDelete = async (data) => {
-    await axios.patch(`http://localhost:3004/profile/${Id}`, {
-      TodoData: MainDatas.filter((item) => item.id !== data),
-    });
-  }
+    setMainDatas(MainDatas.filter((item) => item.id !== data));
+
+    try {
+      await axios.patch(`http://localhost:3004/profile/${Id}`, {
+        TodoData: MainDatas.filter((item) => item.id !== data),
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div>
       <div>
         <Navbar datas={datas} todo={todo} setTodo={setTodo} />
       </div>
+      <form className="form" onSubmit={(e) => handleSubmit(e)}>
+        <label htmlFor="name">Name:-</label>
+        <Input
+          w={{ base: "100%", md: "50%" }}
+          type="text"
+          name="name"
+          required
+          placeholder="Enter Name"
+          onChange={(e) => setName(e.target.value)}
+        />
+        <label htmlFor="age">Age:-</label>
+        <Input
+          w={{ base: "100%", md: "50%" }}
+          type="number"
+          name="age"
+          required
+          placeholder="Enter Age"
+          onChange={(e) => setAge(e.target.value)}
+        />
+        <label htmlFor="email">Email:-</label>
+        <Input
+          w={{ base: "100%", md: "50%" }}
+          type="email"
+          name="email"
+          required
+          placeholder="Enter Email"
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <label htmlFor="gender">Gender:-</label>
+        <Select
+          onChange={(e) => setGender(e.target.value)}
+          w={{ base: "100%", md: "50%" }}
+          name="gender"
+          id="gender"
+        >
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </Select>
+        <Button w={{ base: "100%", md: "50%" }} type="submit">
+          Add List
+        </Button>
+      </form>
       {todo && (
         <div>
-          <form className="form" onSubmit={(e) => handleSubmit(e)}>
-            <label htmlFor="name">Name:-</label>
-            <Input
-              w={{ base: "100%", md: "50%" }}
-              type="text"
-              name="name"
-              required
-              placeholder="Enter Name"
-              onChange={(e) => setName(e.target.value)}
-            />
-            <label htmlFor="age">Age:-</label>
-            <Input
-              w={{ base: "100%", md: "50%" }}
-              type="number"
-              name="age"
-              required
-              placeholder="Enter Age"
-              onChange={(e) => setAge(e.target.value)}
-            />
-            <label htmlFor="email">Email:-</label>
-            <Input
-              w={{ base: "100%", md: "50%" }}
-              type="email"
-              name="email"
-              required
-              placeholder="Enter Email"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <label htmlFor="gender">Gender:-</label>
-            <Select
-              onChange={(e) => setGender(e.target.value)}
-              w={{ base: "100%", md: "50%" }}
-              name="gender"
-              id="gender"
-            >
-              <option value="">Select Gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </Select>
-            <Button w={{ base: "100%", md: "50%" }} type="submit">
-              Add List
-            </Button>
-          </form>
-
           <div>
             <table>
               <thead>
@@ -127,12 +132,7 @@ function HomePage() {
                     <td>{data.email}</td>
                     <td>{data.gender}</td>
                     <td>
-                      <Button
-                        onClick={() =>
-                          
-                            handleDelete(data.id)
-                        }
-                      >
+                      <Button onClick={() => handleDelete(data.id)}>
                         Delete
                       </Button>
                     </td>

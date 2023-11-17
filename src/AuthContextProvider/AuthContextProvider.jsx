@@ -5,6 +5,7 @@ function AuthContextProvider({ children }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [contectSelsFeedback, setContectSelsFeedback] = useState([]);
   const [Id, setId] = useState(0);
+  const [admineLogin, setAdmineLogin] = useState(true);
 
   return (
     <AuthContext.Provider
@@ -15,6 +16,8 @@ function AuthContextProvider({ children }) {
         setContectSelsFeedback,
         Id,
         setId,
+        admineLogin,
+        setAdmineLogin
       }}
     >
       {children}

@@ -1,10 +1,6 @@
 {
   "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
+    
     {
       "email": "abhinabajana900@gmail.com",
       "firstName": "Abhinaba",
@@ -14,7 +10,7 @@
       "TeamFunction": "Creative Production",
       "JobLevel": "C Suite",
       "Howcanourteamhelp": "Upgrade to Business or Enterprise Scale",
-      "id": 2
+      "id": 1
     },
     {
       "email": "abhinabajana900@gmail.com",
@@ -25,7 +21,14 @@
       "TeamFunction": "Hr & Legal",
       "JobLevel": "VP",
       "Howcanourteamhelp": "Technical & Product Support",
-      "id": 3
+      "id": 2
+    }
+  ],
+  "adminlogin": [
+    {
+      "email": "subhamsana700@gmail.com",
+      "password": "a",
+      "id": 1
     }
   ],
   "profile": [
@@ -77,20 +80,6 @@
           "email": "abhinabajana900@gmail.com",
           "gender": "male",
           "id": 4
-        },
-        {
-          "name": "Abhinaba Jana",
-          "age": "32",
-          "email": "abhinabajana900@gmail.com",
-          "gender": "male",
-          "id": 5
-        },
-        {
-          "name": "Abhinaba Jana",
-          "age": "11",
-          "email": "abhinabajana900@gmail.com",
-          "gender": "male",
-          "id": 6
         }
       ]
     }

@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header
         id="headar"
-        style={{ width: "98%", margin: "auto", padding: "1rem" }}
+        style={{ width: "98%", margin: "auto", padding: "1rem" ,position:"sticky",top:"0",zIndex:"1"}}
       >
         <div className="headar-first-text" style={{ textAlign: "center" }}>
           <p>
@@ -41,7 +41,7 @@ function App() {
             <div className="logoimage">
               <img
                 onClick={() => navigate("/")}
-                style={{ width: "40px", background: "none" }}
+                style={{ width: "2.5rem", background: "none" }}
                 src="https://w7.pngwing.com/pngs/444/851/png-transparent-airtable-database-spreadsheet-logo-application-software-slack-logo-angle-rectangle-orange.png"
                 alt="main-logo"
               />
@@ -55,12 +55,14 @@ function App() {
               style={{ background: "noen" }}
               color="black"
               onClick={() => navigate("/Contact-Sales")}
+              w={'auto'}
             >
               Contact Sales
             </Button>
             <Button
               style={{ backgroundColor: "#254FAD" }}
               color="#FFFFFF"
+              w={'auto'}
               onClick={() => navigate("/sign-up-for-free")}
             >
               Sign up for free
@@ -68,6 +70,7 @@ function App() {
             <Button
               style={{ background: "noen" }}
               onClick={() => navigate("/login")}
+              w={'auto'}
             >
               Sign in
             </Button>

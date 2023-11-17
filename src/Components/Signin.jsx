@@ -2,9 +2,10 @@ import React, { useContext, useEffect, useState } from "react";
 import { Button, Input } from "@chakra-ui/react";
 import { AuthContext } from "../AuthContextProvider/AuthContextProvider";
 import { useToast } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
-import './ComponentsCss/Signin.css';
-import DataBase from '../MainData.json'
+import { Link, Navigate } from "react-router-dom";
+import "./ComponentsCss/Signin.css";
+import { useNavigate } from "react-router-dom";
+import DataBase from "../MainData.json";
 function Signin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -12,44 +13,42 @@ function Signin() {
   const [datas, setDatas] = useState(DataBase.profile);
   const { setIsLoggedIn, setId } = useContext(AuthContext);
   const toast = useToast();
+  const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
-   const foundUser = datas.find(
-     (user) => user.email === email && user.password === password
-   );
-     datas.forEach((data) => {
-       if (data.email === email && data.password === password) {
-         data.status = true;
+    const foundUser = datas.find(
+      (user) => user.email === email && user.password === password
+    );
+    datas.forEach((data) => {
+      if (data.email === email && data.password === password) {
+        data.status = true;
         setId(data.id);
-       }
-     })
-   if (foundUser) {
-    
-     toast({
-       title: "Login Successful",
-       description: "You have successfully logged in.",
-       status: "success",
-       duration: 9000,
-       isClosable: true,
-     });
-     setIsLoggedIn(true)
-   } else {
-     
-     toast({
-       title: "Login Failed",
-       description: "Invalid email or password.",
-       status: "error",
-       duration: 9000,
-       isClosable: true,
-     });
-   }
-
+      }
+    });
+    if (foundUser) {
+      toast({
+        title: "Login Successful",
+        description: "You have successfully logged in.",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      });
+      setIsLoggedIn(true);
+    } else {
+      toast({
+        title: "Login Failed",
+        description: "Invalid email or password.",
+        status: "error",
+        duration: 9000,
+        isClosable: true,
+      });
+    }
   }
 
- 
-
-  return (
+  return (<>
+  
+  
     <div className="signin-container">
       <div className="signin-heading">
         <h1>Signin</h1>
@@ -73,9 +72,25 @@ function Signin() {
       </div>
 
       <div>
-        <h2>Don't have an account? <Link className="link" to="/signup">Sign up</Link></h2>
+        <h2>
+          Don't have an account?{" "}
+          <Link className="link" to="/Sign-up-for-free">
+            Sign up
+          </Link>
+        </h2>
       </div>
     </div>
+      <div >
+        <Button
+          colorScheme="teal"
+          w={"auto"}
+          onClick={() => navigate("/adminlogin")}
+         m={"auto"}
+        >
+          Admin Login
+        </Button>
+      </div>
+  </>
   );
 }
 

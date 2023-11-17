@@ -5,11 +5,11 @@ button{
   justify-content: space-around;
 }
 .headar-first-text{
-  font-size: 17px;
-  padding: 12px 32px;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
 }
 h3{
-  font-size: 15px;
+  font-size: 0.9rem;
 }
 Button:hover{
  color: #254FAD;
@@ -50,11 +50,12 @@ Button:hover{
    }
 
 @media  screen and (max-width: 720px){
+ 
    .App{
      width: 100%;
    }
    #headar{
-     width: 100%;
+     width: 55%;
    }
    .navebar-left{
     width: auto;
@@ -69,8 +70,14 @@ Button:hover{
    font-size: 10px;
    }
    .navebar-left  button{
-    width: 80px;
+    width: 5rem;
     font-size: 10px;
+   }
+   .operationalize h2{
+    font-size:auto;
+   }
+  .player-text h2{
+    font-size: auto;
    }
 }
 
