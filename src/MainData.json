@@ -1,6 +1,5 @@
 {
   "posts": [
-    
     {
       "email": "abhinabajana900@gmail.com",
       "firstName": "Abhinaba",
@@ -82,6 +81,33 @@
           "id": 4
         }
       ]
+    },
+    {
+      "email": "bharat74309@gmail.com",
+      "password": "a",
+      "status": false,
+      "TodoData": [],
+      "id": 3
+    },
+    {
+      "email": "bharat74309@gmail.com",
+      "password": "a",
+      "status": false,
+      "TodoData": [],
+      "id": 4
+    },
+    {
+      "email": "kuchu@gmail.com",
+      "password": "a",
+      "status": false,
+      "TodoData": [],
+      "id": 5
+    },
+    {
+      "email": "kuchu2@gmail.com",
+      "password": "aa",
+      "status": false,
+      "id": 6
     }
   ]
 }

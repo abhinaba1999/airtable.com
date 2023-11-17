@@ -5,6 +5,8 @@ import { useToast } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import datas from "../MainData.json";
 import "./ComponentsCss/SignUp.css";
+import axios from "axios";
+
 function SignUpForFree() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,13 +16,16 @@ function SignUpForFree() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    const foundedUser = emailPass.find(
+      (user) => user.email === email || user.password === password
+    );
+
+    
     try {
-      // foundedUser basically checks if the user already has an account or not.
-      const foundedUser = emailPass.find(
-        (user) => user.email === email || user.password === password
-      );
-      // if the user already has an account then it will show an error
-      if (foundedUser) {
+      // Check if the user already exists based on email or password
+
+      if (foundedUser.status) {
+        // If the user already exists, show an error message
         toast({
           title: "Error",
           description: "Already have an account",
@@ -28,22 +33,18 @@ function SignUpForFree() {
           duration: 9000,
           isClosable: true,
         });
-        navigate("/login");
+        navigate("/login"); // Redirect to login page
       } else {
-        // else it will create a new account
-        const response = await fetch("http://localhost:3004/profile", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            email: email,
-            password: password,
-            status: false,
-          }),
+        // Create a new account
+        const response = await axios.post("http://localhost:3004/profile", {
+          email: email,
+          password: password,
+          status: false,
+          TodoData: [],
         });
-        // if the account is created then it will show a success message
-        if (response.ok) {
+         console.log(response.status);
+        if (response.status === 201) {
+          // If account creation is successful, show a success message
           toast({
             title: "Account created.",
             description: "We've created your account for you.",
@@ -51,9 +52,9 @@ function SignUpForFree() {
             duration: 9000,
             isClosable: true,
           });
-          navigate("/login");
+          navigate("/login"); // Redirect to login page
         } else {
-          // if the account is not created then it will show an error.
+          // If account creation fails, show an error message
           toast({
             title: "Error",
             description: "Something went wrong",
@@ -67,8 +68,7 @@ function SignUpForFree() {
       console.log(error);
     }
   }
-  console.log(datas);
-
+  console.log(email, password);
   return (
     <div className="sign-up">
       <div className="sign-up-heading">
