@@ -26,7 +26,7 @@ function Signin() {
         setId(data.id);
       }
     });
-    if (foundUser) {
+    if (foundUser.status) {
       toast({
         title: "Login Successful",
         description: "You have successfully logged in.",

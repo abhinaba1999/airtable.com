@@ -3,7 +3,7 @@ import { Button } from "@chakra-ui/react";
 import { AuthContext } from "../AuthContextProvider/AuthContextProvider";
 import axios from "axios";
 import "./ContactSales/ContactSales.css";
-
+import { useToast } from "@chakra-ui/react";
 function ContactSales() {
   const { contectSelsFeedback, setContectSelsFeedback } =
     useContext(AuthContext);
@@ -19,6 +19,8 @@ function ContactSales() {
     Howcanourteamhelp: "",
   });
 
+  const toast = useToast();
+
   const handleSubmit = async () => {
     let temp = {
       email: datas.email,
@@ -32,6 +34,22 @@ function ContactSales() {
     };
     setContectSelsFeedback([...contectSelsFeedback, datas]);
     let res = await axios.post("http://localhost:3004/posts", temp);
+    console.log(res.status);
+    if (res.status === 201) {
+      toast({
+        description: "Thank you for your feedback",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      });
+    } else {
+      toast({
+        description: "Something went wrong",
+        status: "error",
+        duration: 9000,
+        isClosable: true,
+      });
+    }
   };
 
   return (

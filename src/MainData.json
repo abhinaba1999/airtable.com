@@ -21,6 +21,61 @@
       "JobLevel": "VP",
       "Howcanourteamhelp": "Technical & Product Support",
       "id": 2
+    },
+    {
+      "email": "abhinabajana900@gmail.com",
+      "firstName": "Abhinaba",
+      "lastName": "Jana",
+      "phoneNumber": "09433903331",
+      "companyName": "none",
+      "TeamFunction": "Sales & Account Management",
+      "JobLevel": "Manager",
+      "Howcanourteamhelp": "Technical & Product Support",
+      "id": 3
+    },
+    {
+      "email": "abhinabajana900@gmail.com",
+      "firstName": "Abhinaba",
+      "lastName": "Jana2",
+      "phoneNumber": "09433903331",
+      "companyName": "none",
+      "TeamFunction": "Sales & Account Management",
+      "JobLevel": "Manager",
+      "Howcanourteamhelp": "Technical & Product Support",
+      "id": 4
+    },
+    {
+      "email": "abhinabajana900@gmail.com",
+      "firstName": "Abhinaba",
+      "lastName": "Jana2",
+      "phoneNumber": "09433903331",
+      "companyName": "none",
+      "TeamFunction": "Sales & Account Management",
+      "JobLevel": "Manager",
+      "Howcanourteamhelp": "Technical & Product Support",
+      "id": 5
+    },
+    {
+      "email": "abhinabajana900@gmail.com",
+      "firstName": "Abhinaba",
+      "lastName": "Jana2",
+      "phoneNumber": "09433903331",
+      "companyName": "none",
+      "TeamFunction": "Sales & Account Management",
+      "JobLevel": "Manager",
+      "Howcanourteamhelp": "Technical & Product Support",
+      "id": 6
+    },
+    {
+      "email": "abhinabajana900@gmail.com",
+      "firstName": "Abhinaba",
+      "lastName": "Jana",
+      "phoneNumber": "09433903331",
+      "companyName": "none",
+      "TeamFunction": "Hr & Legal",
+      "JobLevel": "Director",
+      "Howcanourteamhelp": "Request a Sales Demo",
+      "id": 7
     }
   ],
   "adminlogin": [
@@ -108,6 +163,28 @@
       "password": "aa",
       "status": false,
       "id": 6
+    },
+    {
+      "email": "yash@gmail.com",
+      "password": "a",
+      "status": false,
+      "TodoData": [
+        {
+          "name": "Abhinaba Jana",
+          "age": "22",
+          "email": "abhinabajana900@gmail.com",
+          "gender": "male",
+          "status": false
+        },
+        {
+          "name": "Abhinaba Jana",
+          "age": "23",
+          "email": "abhinabajana900@gmail.com",
+          "gender": "male",
+          "status": false
+        }
+      ],
+      "id": 7
     }
   ]
 }
